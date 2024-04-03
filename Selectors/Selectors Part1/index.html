@@ -1,0 +1,58 @@
+<!--# What are selectors?
+- are used to determine which HTML element(s) get styled
+- most common type of selector is the type selector (selects all matching elements on the page for styling)
+
+For example:
+
+div {
+  /* Styles go here. */
+}
+
+- whatever declarations we replace the comments with are applied to every div element
+
+# Class and ID Selectors
+
+- can select elements by their HTML attributes
+
+The following example selects elements with a class of "class-name" or an id of "id-name":
+
+.class-name {
+  /* Styles go here. */
+}
+
+#id-name {
+  /* Styles go here. */
+}
+
+- Selecting by class is done with a . period
+    -> used to style multiple elements with a matching class attribute
+    
+- Selecting by id is done with an # period
+    ->used to style a single element with a matching id attribute
+
+div.class-name {
+  /* Styles go here. */
+}
+
+div#id-name {
+  /* Styles go here. */
+}
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Selectors</title>
+</head>
+<body>
+    <div>
+        <p class="line" id="roses">Roses are red.</p>
+        <p class="line" id="violets">Violets are blue.</p>
+        <p class="line" id="sugar">Sugar is sweet.</p>
+        <p class="line">And so are you!</p>
+      </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!--# Grouping
+
+- same elements can have diffrent styles
+
+For example:
+
+ul {
+  border: 1px solid;
+  width: 50px;
+}
+
+ol {
+  border: 1px solid;
+  width: 50px;
+}
+
+group our styles together so we aren't repeating ourselves:
+
+ul, ol {
+  border: 1px solid;
+  width: 50px;
+}
+
+# Combining
+
+- using the > symbol to select child elements, such as only <li> elements under unordered lists:
+
+    ul > li {
+  border: 1px solid;
+  width: 50px;
+}
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Continents</title>
+</head>
+<body>
+
+    <ul>
+        <h2>Continents 🗺️</h2>
+        <li>Africa</li>
+        <li>Antarctica</li>
+        <li>Asia</li>
+        <li>Australia</li>
+        <li>Europe</li>
+        <li>North America</li>
+        <li>South America</li>
+      </ul>
+      
+      <ol>
+        <h2>Oceans By Size 🌊</h2>
+        <li>Pacific</li>
+        <li>Atlantic</li>
+        <li>Indian</li>
+        <li>Antarctic/Southern</li>
+        <li>Arctic</li>
+      </ol>
+      
+</body>
+</html>
